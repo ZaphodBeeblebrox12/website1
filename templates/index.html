@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Community Platform - Welcome{% endblock %}
+
+{% block content %}
+<header>
+    <h1>Community Platform</h1>
+    <p>A modern platform for community management with Telegram integration</p>
+    <a href="/auth/telegram/" class="cta-button">Sign in with Telegram</a>
+</header>
+
+<section class="features">
+    <div class="container">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Telegram Authentication</h3>
+                <p>Secure login using Telegram's official Login Widget with HMAC-SHA256 verification.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Role Management</h3>
+                <p>Flexible user roles (Admin, Staff, User) with approval workflows for staff.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Ban System</h3>
+                <p>Comprehensive ban/unban system with audit logging for accountability.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Community Platform. Built with Django.</p>
+</footer>
+{% endblock %}
